@@ -1,0 +1,14 @@
+{
+    "name": "Memword-单词记忆",
+    "short_name": "单词记忆",
+    "start_url": "/",
+    "theme_color": "#fcfaf2",
+    "background_color": "#fcfaf2",
+    "display": "standalone",
+    "orientation": "natural",
+    "icons": [{
+      "src": "/app-icon.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }]
+  }
