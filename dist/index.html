@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="icon" href="/app-icon.png" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/app-icon.png" type="image/png" sizes="192x192" />
+    <link href="https://unpkg.com/animate.css@4.1.1/animate.css" async rel="stylesheet" />
+    <title>单词记忆</title>
+    <meta name="description"
+        content="Memword,单词书,记单词,四级真题核心词 ,六级真题核心词 ,考研必考词汇,专四真题高频词,专八真题高频词,四级英语词汇,六级英语词汇,考研英语词汇,专四核心词汇,专八核心词汇,新东方四级词汇,新东方六级词汇,新东方考研词汇,四级真题核心词（正序版）,六级真题核心词（正序版）,考研必考词汇（正序版）,专四真题高频词（正序版）,四级英语词汇（正序版）,专四核心词汇（正序版）,专八核心词汇（正序版）,雅思词汇,TOEFL词汇,GRE词汇,SAT词汇,GMAT词汇,新东方雅思词汇,新东方TOEFL词汇,新东方GRE词汇,新东方SAT词汇,新东方GMAT词汇,雅思词汇（正序版）,GMAT词汇（正序版）,中考必备词汇,高考必备词汇 ,新东方初中词汇,新东方高中词汇,人教版小学英语-三年级上册,人教版小学英语-三年级下册,人教版小学英语-四年级上册,人教版小学英语-四年级下册,人教版小学英语-五年级上册,人教版小学英语-五年级下册,人教版小学英语-六年级上册,人教版小学英语-六年级下册,人教版初中英语-七年级上册,人教版初中英语-七年级下册,人教版初中英语-八年级上册,人教版初中英语-八年级下册,人教版初中英语-九年级全册,外研社版初中英语-七年级上册,外研社版初中英语-七年级下册,外研社版初中英语-八年级上册,外研社版初中英语-八年级下册,外研社版初中英语-九年级上册,外研社版初中英语-九年级下册,人教版高中英语-必修1,人教版高中英语-必修2,人教版高中英语-必修3,人教版高中英语-必修4,人教版高中英语-必修5,人教版高中英语-选修6,人教版高中英语-选修7,人教版高中英语-选修8,人教版高中英语-选修9,人教版高中英语-选修10,人教版高中英语-选修11,初中英语词汇（正序版）,高中英语词汇（正序版）,商务英语词汇,新东方BEC词汇,北师大版高中必修一,北师大版高中必修二,北师大版高中必修三,北师大版高中必修四,北师大版高中必修五,北师大版高中选修六,北师大版高中选修七,北师大版高中选修八,北师大版高中选修九,北师大版高中选修十,北师大版高中选修十一">
+    <meta name="keywords"
+        content="单词书,记单词,Memword,AI,GPT,快速单词记忆法,四级真题核心词 ,六级真题核心词 ,考研必考词汇,专四真题高频词,专八真题高频词,四级英语词汇,六级英语词汇,考研英语词汇,专四核心词汇,专八核心词汇,新东方四级词汇,新东方六级词汇,新东方考研词汇,四级真题核心词（正序版）,六级真题核心词（正序版）,考研必考词汇（正序版）,专四真题高频词（正序版）,四级英语词汇（正序版）,专四核心词汇（正序版）,专八核心词汇（正序版）,雅思词汇,TOEFL词汇,GRE词汇,SAT词汇,GMAT词汇,新东方雅思词汇,新东方TOEFL词汇,新东方GRE词汇,新东方SAT词汇,新东方GMAT词汇,雅思词汇（正序版）,GMAT词汇（正序版）,中考必备词汇,高考必备词汇 ,新东方初中词汇,新东方高中词汇,人教版小学英语-三年级上册,人教版小学英语-三年级下册,人教版小学英语-四年级上册,人教版小学英语-四年级下册,人教版小学英语-五年级上册,人教版小学英语-五年级下册,人教版小学英语-六年级上册,人教版小学英语-六年级下册,人教版初中英语-七年级上册,人教版初中英语-七年级下册,人教版初中英语-八年级上册,人教版初中英语-八年级下册,人教版初中英语-九年级全册,外研社版初中英语-七年级上册,外研社版初中英语-七年级下册,外研社版初中英语-八年级上册,外研社版初中英语-八年级下册,外研社版初中英语-九年级上册,外研社版初中英语-九年级下册,人教版高中英语-必修1,人教版高中英语-必修2,人教版高中英语-必修3,人教版高中英语-必修4,人教版高中英语-必修5,人教版高中英语-选修6,人教版高中英语-选修7,人教版高中英语-选修8,人教版高中英语-选修9,人教版高中英语-选修10,人教版高中英语-选修11,初中英语词汇（正序版）,高中英语词汇（正序版）,商务英语词汇,新东方BEC词汇,北师大版高中必修一,北师大版高中必修二,北师大版高中必修三,北师大版高中必修四,北师大版高中必修五,北师大版高中选修六,北师大版高中选修七,北师大版高中选修八,北师大版高中选修九,北师大版高中选修十,北师大版高中选修十一">
+    <link rel="mainfest" href="./site.webmanifest">
+    <link rel="dns-prefetch" href="https://archive.0231019.top/BEC_2.json">
+    <script src="/serviceWorkerRegister.js" defer></script>
+  <script type="module" crossorigin src="/assets/index.0ce31376.js"></script>
+  <link rel="stylesheet" href="/assets/index.77f25d68.css">
+</head>
+<style>
+    #app-loading {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fcfaf2;
+        background-image: url(/bg.png);
+        -webkit-user-select: none;
+           -moz-user-select: none;
+                user-select: none;
+        z-index: 999;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+
+    #app-loading p {
+        font-size: 13px;
+        color: #666;
+    }
+
+    body {
+        color: #333;
+        background-color: #fcfaf2;
+        background-image: url(/bg.png);
+    }
+</style>
+
+<body>
+    <div id="app-loading">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            style="background: transparent; display: block;" width="40px" height="40px" viewBox="0 0 100 100"
+            preserveAspectRatio="xMidYMid">
+            <g>
+                <circle cx="73.801" cy="68.263" fill="#0052d9" r="3">
+                    <animateTransform attributeName="transform" type="rotate" calcMode="spline"
+                        values="0 50 50;360 50 50" times="0;1" keySplines="0.5 0 0.5 1" repeatCount="indefinite"
+                        dur="1.4925373134328357s" begin="0s"></animateTransform>
+                </circle>
+                <circle cx="68.263" cy="73.801" fill="#0052d9" r="3">
+                    <animateTransform attributeName="transform" type="rotate" calcMode="spline"
+                        values="0 50 50;360 50 50" times="0;1" keySplines="0.5 0 0.5 1" repeatCount="indefinite"
+                        dur="1.4925373134328357s" begin="-0.062s"></animateTransform>
+                </circle>
+                <circle cx="61.481" cy="77.716" fill="#0052d9" r="3">
+                    <animateTransform attributeName="transform" type="rotate" calcMode="spline"
+                        values="0 50 50;360 50 50" times="0;1" keySplines="0.5 0 0.5 1" repeatCount="indefinite"
+                        dur="1.4925373134328357s" begin="-0.125s"></animateTransform>
+                </circle>
+                <circle cx="53.916" cy="79.743" fill="#0052d9" r="3">
+                    <animateTransform attributeName="transform" type="rotate" calcMode="spline"
+                        values="0 50 50;360 50 50" times="0;1" keySplines="0.5 0 0.5 1" repeatCount="indefinite"
+                        dur="1.4925373134328357s" begin="-0.187s"></animateTransform>
+                </circle>
+                <circle cx="46.084" cy="79.743" fill="#0052d9" r="3">
+                    <animateTransform attributeName="transform" type="rotate" calcMode="spline"
+                        values="0 50 50;360 50 50" times="0;1" keySplines="0.5 0 0.5 1" repeatCount="indefinite"
+                        dur="1.4925373134328357s" begin="-0.25s"></animateTransform>
+                </circle>
+                <circle cx="38.519" cy="77.716" fill="#0052d9" r="3">
+                    <animateTransform attributeName="transform" type="rotate" calcMode="spline"
+                        values="0 50 50;360 50 50" times="0;1" keySplines="0.5 0 0.5 1" repeatCount="indefinite"
+                        dur="1.4925373134328357s" begin="-0.312s"></animateTransform>
+                </circle>
+                <circle cx="31.737" cy="73.801" fill="#0052d9" r="3">
+                    <animateTransform attributeName="transform" type="rotate" calcMode="spline"
+                        values="0 50 50;360 50 50" times="0;1" keySplines="0.5 0 0.5 1" repeatCount="indefinite"
+                        dur="1.4925373134328357s" begin="-0.375s"></animateTransform>
+                </circle>
+                <circle cx="26.199" cy="68.263" fill="#0052d9" r="3">
+                    <animateTransform attributeName="transform" type="rotate" calcMode="spline"
+                        values="0 50 50;360 50 50" times="0;1" keySplines="0.5 0 0.5 1" repeatCount="indefinite"
+                        dur="1.4925373134328357s" begin="-0.437s"></animateTransform>
+                </circle>
+                <animateTransform attributeName="transform" type="rotate" calcMode="spline" values="0 50 50;0 50 50"
+                    times="0;1" keySplines="0.5 0 0.5 1" repeatCount="indefinite" dur="1.4925373134328357s">
+                </animateTransform>
+            </g>
+        </svg>
+        <p>数据获取中...</p>
+    </div>
+    <div id="app"></div>
+    
+</body>
+<script>
+    const setSize = function () {
+        const width = window.innerWidth;
+        if (width <= 375) {
+            document.querySelector('html').style.fontSize = '20px'
+        } else if (width >= 525) {
+            document.querySelector('html').style.fontSize = '28px'
+        } else {
+            let s = (width - 375) * 0.0533 + 20;
+            document.querySelector('html').style.fontSize = s + 'px'
+        }
+    };
+    window.onresize = function () {
+        setSize()
+    };
+    setSize();
+</script>
+
+</html>
