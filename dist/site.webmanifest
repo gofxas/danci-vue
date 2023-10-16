@@ -8,7 +8,7 @@
     "orientation": "natural",
     "icons": [{
       "src": "/app-icon.png",
-      "sizes": "128x128",
+      "sizes": "200x200",
       "type": "image/png"
     }]
   }
