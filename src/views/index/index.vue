@@ -2,8 +2,16 @@
   <div class="wrapper">
     <Switch />
     <Word />
-    <div class="card btn" @click="prevWord">上一个</div>
-    <div class="card btn" @click="nextWord">下一个</div>
+    <Spell
+      v-if="spell"
+      @next="nextWord"
+      :letter="letter"
+      :word="spellWord"
+    />
+    <template v-else>
+      <div class="card btn" @click="prevWord">上一个</div>
+      <div class="card btn" @click="nextWord">下一个</div>
+    </template>
     <div class="card btn" @click="ignore">不会</div>
     <router-link class="card btn link" to="/saved">
       生词本
@@ -13,6 +21,7 @@
     </router-link>
     <div class="footer">
       <router-link to="/report">今日学习报告</router-link>
+      <a @click="switchSpell">切换拼写模式</a>
     </div>
   </div>
 </template>
@@ -20,13 +29,15 @@
 <script>
 import Switch from "./components/switch.vue";
 import Word from "./components/word.vue";
+import Spell from "./components/spell.vue";
 import db from "@/utils/db";
 import updateRecord from "@/utils/record";
-import { mapActions, mapState, mapGetters } from "vuex";
+import { formatKana } from "@/utils/format";
+import { mapActions, mapState, mapGetters, mapMutations } from "vuex";
 import _ from "lodash";
 export default {
   name: "index",
-  components: { Switch, Word },
+  components: { Switch, Word, Spell },
   data() {
     return {
       count: 0,
@@ -51,7 +62,24 @@ export default {
   },
   computed: {
     ...mapState("book", ["active", "active_index", "words", "books"]),
+    ...mapState("ui", ["spell"]),
     ...mapGetters("book", ["book", "progress", "currentWord"]),
+    letter() {
+      if (this.book && this.book.tags.includes("日语")) {
+        let kana = formatKana(this.currentWord?.word);
+        return kana || "";
+      } else {
+        return this.currentWord?.word || "";
+      }
+    },
+    spellWord() {
+      if (this.book && this.book.tags.includes("日语")) {
+        let kana = formatKana(this.currentWord?.word);
+        return kana || "";
+      } else {
+        return this.currentWord?.word || "";
+      }
+    }
   },
   methods: {
     ...mapActions("book", [
@@ -60,6 +88,7 @@ export default {
       "setActive",
       "setActiveIndex",
     ]),
+    ...mapMutations("ui",['switchSpell']),
     nextWord() {
       if (this.active_index[this.active] + 1 != undefined) {
         this.setActiveIndex({
@@ -114,6 +143,11 @@ export default {
   display: inline-block;
   align-self: center;
   font-size: 14px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 .footer a {
   color: #adadad;

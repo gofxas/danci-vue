@@ -36,6 +36,7 @@
           学习
         </a>
       </div>
+      <!-- <Spell :letter="letter"/> -->
     </div>
   </div>
 </template>
@@ -43,17 +44,16 @@
 import { Howl } from "howler";
 import { formatKana } from "@/utils/format";
 import { mapGetters } from "vuex";
+import Spell from "./spell.vue";
 export default {
   name: "Word",
+  components: { Spell },
   computed: {
     ...mapGetters("book", ["currentWord", "book"]),
     studyLink() {
       if (this.book && this.book.tags.includes("日语")) {
-        return (
-          "https://dict.youdao.com/result?word=" +
-          this.currentWord?.word +
-          "&lang=ja"
-        );
+        let kana = formatKana(this.currentWord?.word);
+        return "https://dict.youdao.com/result?word=" + kana + "&lang=ja";
       } else {
         return (
           "https://dict.youdao.com/result?word=" +
@@ -93,6 +93,14 @@ export default {
         });
       }
       return null;
+    },
+    letter() {
+      if (this.book && this.book.tags.includes("日语")) {
+        let kana = formatKana(this.currentWord?.word);
+        return kana || "";
+      } else {
+        return this.currentWord?.word || "";
+      }
     },
   },
   methods: {
