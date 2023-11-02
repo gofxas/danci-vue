@@ -25,7 +25,7 @@
           <span>{{ currentWord?.jphone }}</span>
         </a>
       </div>
-      <div>
+      <div class="study-links">
         <a
           style="marginright: 5px"
           title="去搜索引擎查询相关信息"
@@ -33,21 +33,42 @@
           :href="studyLink"
           class="lbtn"
         >
-          学习
+          学习(新窗口打开)
+        </a>
+        <a
+          href="javascript:void(0)"
+          class="lbtn"
+          @click="this.visible = !this.visible"
+        >
+          学习(当前窗口打开)
         </a>
       </div>
       <!-- <Spell :letter="letter"/> -->
     </div>
   </div>
+  <Popup 
+  @close="visible = false"
+  :visible="visible">
+    <iframe 
+    class="frame"
+    :src="studyLink" frameborder="0"></iframe>
+  </Popup>
 </template>
 <script>
 import { Howl } from "howler";
 import { formatKana } from "@/utils/format";
 import { mapGetters } from "vuex";
 import Spell from "./spell.vue";
+import Popup from "@/components/popup";
+
 export default {
   name: "Word",
-  components: { Spell },
+  components: { Spell,Popup },
+  data() {
+    return {
+      visible:false
+    }
+  },
   computed: {
     ...mapGetters("book", ["currentWord", "book"]),
     studyLink() {
@@ -120,6 +141,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   box-shadow: 0 0 3px #dad4cb;
+  gap: 5px;
   .word {
     font-size: 48px;
     font-family: "Fira Code";
@@ -191,7 +213,9 @@ export default {
     font-size: 32px !important;
   }
 }
-
+.study-links {
+  display: flex;
+}
 .lbtn {
   padding: 10px;
   display: inline-block;
@@ -199,5 +223,10 @@ export default {
   line-height: 1;
   width: 100%;
   text-align: center;
+  color: #57c3c2;
+}
+.frame {
+  width: 100%;
+  height: 100%;
 }
 </style>
