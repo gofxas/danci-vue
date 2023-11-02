@@ -22,6 +22,7 @@
     <div class="footer">
       <router-link to="/report">今日学习报告</router-link>
       <a @click="switchSpell">切换拼写模式</a>
+      <a href="https://github.com/gofxas/danci-vue" target="_blank">开源地址</a>
     </div>
   </div>
 </template>
@@ -147,11 +148,13 @@ export default {
 .footer {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 15px;
 }
 .footer a {
   color: #adadad;
-  font-size: 14px;
+  font-size: 13px;
   text-decoration: underline;
+  cursor: pointer;
 }
 </style>

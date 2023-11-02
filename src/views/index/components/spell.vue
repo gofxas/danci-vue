@@ -97,7 +97,7 @@ export default {
       background-color: #fff;
     }
     &.success {
-      width: 5rem;
+      width: 12rem;
       color: #fff;
       background-color: #67C23A;
     }
