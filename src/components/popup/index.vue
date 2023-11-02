@@ -28,6 +28,9 @@ export default {
   width: 100%;
   bottom: 0;
   height: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
 }
 .popup-wrapper {
   position: absolute;
