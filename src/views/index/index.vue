@@ -91,7 +91,8 @@ export default {
     ]),
     ...mapMutations("ui",['switchSpell']),
     nextWord() {
-      if (this.active_index[this.active] + 1 != undefined) {
+      console.log(this.active_index, this.active)
+      if (this.words[this.active_index[this.active] + 1] != undefined) {
         this.setActiveIndex({
           [this.active]: this.active_index[this.active] + 1,
         });

@@ -16,7 +16,7 @@ const module = {
     async getWords({ state }) {
       const active = state.active;
       if (active) {
-        const response = await fetch("https://archive.0231019.top/" + active + ".json");
+        const response = await fetch("https://archive.v2k.fun/" + active + ".json");
         const res = await response.json();
         state.words = res;
       };
