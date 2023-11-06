@@ -1,4 +1,5 @@
-const WEBCACHE = "memwords-web-cache";
+const Version = "1.0.0";
+const WEBCACHE = "memwords-web-cache-v"+Version;
 const CACHE_LIST = [
   "/",
   "/FiraCode-Regular.ttf",
@@ -25,7 +26,16 @@ function isAcceptFile(url) {
   return r.test(url);
 }
 self.addEventListener("activate", function (event) {
-  console.log("ServiceWorker activated.");
+  event.waitUntil(
+    caches.keys().then(function (cacheNames) {
+      cacheNames.map(function (cacheName) {
+        if (WEBCACHE != cacheName) {
+          console.log("Deleting out of date cache:", cacheName);
+          return caches.delete(cacheName);
+        }
+      })
+    })
+  );
 });
 
 self.addEventListener("install", function (event) {
