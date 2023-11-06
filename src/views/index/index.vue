@@ -48,7 +48,6 @@ export default {
     active_index: {
       handler() {
         db.saved.count((count) => {
-          console.log(count, "count");
           this.count = count;
         });
       },

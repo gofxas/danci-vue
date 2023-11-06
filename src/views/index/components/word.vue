@@ -27,31 +27,54 @@
       </div>
       <div class="study-links">
         <a
-          style="marginright: 5px"
-          title="去搜索引擎查询相关信息"
-          target="blank"
-          :href="studyLink"
-          class="lbtn"
-        >
-          学习(新窗口打开)
-        </a>
-        <a
           href="javascript:void(0)"
           class="lbtn"
           @click="this.visible = !this.visible"
         >
           学习(当前窗口打开)
         </a>
+        <a
+          v-if="currentWord?.rel_words"
+          class="lbtn"
+          href="javascript:void(0)"
+          @click="rootword = true"
+          >查看同根词（{{ currentWord?.rel_words.length }}）</a
+        >
       </div>
       <!-- <Spell :letter="letter"/> -->
     </div>
   </div>
-  <Popup 
-  @close="visible = false"
-  :visible="visible">
-    <iframe 
-    class="frame"
-    :src="studyLink" frameborder="0"></iframe>
+  <Popup @close="visible = false" :visible="visible">
+    <iframe class="frame" :src="studyLink" frameborder="0"></iframe>
+  </Popup>
+  <Popup @close="rootword = false" :visible="rootword">
+    <div class="rel-words">
+      <h3>同根词</h3>
+      <table class="relWordTable">
+        <thead>
+          <tr>
+            <th style="width: 5rem">词性</th>
+            <th>相关单词</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="(i, k) in currentWord?.rel_words" :key="k">
+            <td :style="{ textAlign: 'center' }">{{ i.pos }}</td>
+            <td>
+              <p v-for="(w, j) in i.words" :key="j">
+                <a
+                  :href="`https://dict.youdao.com/result?word=${w.hwd}&lang=en`"
+                  target="_blank"
+                >
+                  {{ w.hwd }}
+                </a>
+                : {{ w.tran }}
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </Popup>
 </template>
 <script>
@@ -63,11 +86,12 @@ import Popup from "@/components/popup";
 
 export default {
   name: "Word",
-  components: { Spell,Popup },
+  components: { Spell, Popup },
   data() {
     return {
-      visible:false
-    }
+      visible: false,
+      rootword: false,
+    };
   },
   computed: {
     ...mapGetters("book", ["currentWord", "book"]),
@@ -172,7 +196,7 @@ export default {
 .relWordTable {
   border: 1px solid #97846c;
   border-collapse: collapse;
-
+  font-size: .7rem;
   th,
   td {
     border: 1px solid #97846c;
@@ -229,4 +253,17 @@ export default {
   width: 100%;
   height: 100%;
 }
+.rel-words {
+  width: 100%;
+  padding: 1rem;
+  h3 {
+    text-align: center;
+  }
+  table {
+    width: 100%;
+    max-width: var(--maxwidth);
+    margin: 0 auto;
+  }
+}
+
 </style>

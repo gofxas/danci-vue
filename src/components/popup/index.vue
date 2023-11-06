@@ -1,8 +1,8 @@
 <template >
   <transition name="slide">
     <div @click="closeModal" class="popup" v-if="visible">
-      <div class="popup-wrapper">
-        <slot/>
+      <div @click.stop class="popup-wrapper" :style="{ height: height }">
+        <slot />
       </div>
     </div>
   </transition>
@@ -12,6 +12,7 @@ export default {
   name: "popup",
   props: {
     visible: false,
+    height: "70%",
   },
   methods: {
     closeModal() {
@@ -39,7 +40,8 @@ export default {
   bottom: 0;
   width: 100%;
   border-radius: 5px 5px 0 0;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .slide-enter-active,
 .slide-leave-active {

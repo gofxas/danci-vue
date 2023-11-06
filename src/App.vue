@@ -55,6 +55,7 @@ export default {
 body {
   margin: 0;
   background-color: #f5f7fa;
+  --maxwidth: 22.75rem;
 }
 .wrapper {
   width: 100%;
