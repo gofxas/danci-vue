@@ -43,39 +43,40 @@
       </div>
       <!-- <Spell :letter="letter"/> -->
     </div>
+    <Popup @close="visible = false" :visible="visible">
+      <iframe class="frame" :src="studyLink" frameborder="0"></iframe>
+    </Popup>
+    <Popup @close="rootword = false" :visible="rootword">
+      <div class="rel-words">
+        <h2 style="margin-bottom: 1rem">同根词</h2>
+        <table class="relWordTable">
+          <thead>
+            <tr>
+              <th style="width: 5rem">词性</th>
+              <th>相关单词</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="(i, k) in currentWord?.rel_words" :key="k">
+              <td :style="{ textAlign: 'center' }">{{ i.pos }}</td>
+              <td>
+                <p v-for="(w, j) in i.words" :key="j">
+                  <a
+                    :href="`https://dict.youdao.com/result?word=${w.hwd}&lang=en`"
+                    target="_blank"
+                  >
+                    {{ w.hwd }}
+                  </a>
+                  : {{ w.tran }}
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <router-link class="rootlist" to="/root">查看词根列表</router-link>
+      </div>
+    </Popup>
   </div>
-  <Popup @close="visible = false" :visible="visible">
-    <iframe class="frame" :src="studyLink" frameborder="0"></iframe>
-  </Popup>
-  <Popup @close="rootword = false" :visible="rootword">
-    <div class="rel-words">
-      <h3>同根词</h3>
-      <table class="relWordTable">
-        <thead>
-          <tr>
-            <th style="width: 5rem">词性</th>
-            <th>相关单词</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="(i, k) in currentWord?.rel_words" :key="k">
-            <td :style="{ textAlign: 'center' }">{{ i.pos }}</td>
-            <td>
-              <p v-for="(w, j) in i.words" :key="j">
-                <a
-                  :href="`https://dict.youdao.com/result?word=${w.hwd}&lang=en`"
-                  target="_blank"
-                >
-                  {{ w.hwd }}
-                </a>
-                : {{ w.tran }}
-              </p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </Popup>
 </template>
 <script>
 import { Howl } from "howler";
@@ -196,7 +197,7 @@ export default {
 .relWordTable {
   border: 1px solid #97846c;
   border-collapse: collapse;
-  font-size: .7rem;
+  font-size: 0.7rem;
   th,
   td {
     border: 1px solid #97846c;
@@ -256,7 +257,7 @@ export default {
 .rel-words {
   width: 100%;
   padding: 1rem;
-  h3 {
+  h2 {
     text-align: center;
   }
   table {
@@ -264,6 +265,11 @@ export default {
     max-width: var(--maxwidth);
     margin: 0 auto;
   }
+  .rootlist {
+    display: block;
+    margin: 1rem;
+    text-align: center;
+    color: #57c3c2;
+  }
 }
-
 </style>

@@ -1,7 +1,13 @@
 <template >
   <transition name="slide">
     <div @click="closeModal" class="popup" v-if="visible">
-      <div @click.stop class="popup-wrapper" :style="{ height: height }">
+      <!-- @transitionstart="animationendHandler" -->
+      <div
+        @transitionend="animationendHandler"
+        @click.stop
+        class="popup-wrapper"
+        :style="{ height: height }"
+      >
         <slot />
       </div>
     </div>
@@ -17,6 +23,13 @@ export default {
   methods: {
     closeModal() {
       this.$emit("close");
+    },
+    animationendHandler() {
+      if (this.visible) {
+        this.$emit("closed");
+      } else {
+        this.$emit("opened");
+      }
     },
   },
 };
