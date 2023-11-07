@@ -9,12 +9,13 @@
     </div>
     <div
       class="card rootbox"
-      v-for="i in filterdList"
+      v-for="(i) in filterdList"
       :key="i.root"
       @click="visitPop(i)"
     >
       <p class="ras">
         <span class="tag">{{ i.tag }}</span>
+        <span class="content" style="color:#57c3c2;margin-right:5px;">{{ i.root }}</span>
         <span class="content">{{ i.ras_content }}</span>
         <span class="indicate">{{ i.ras_indicate }}</span>
       </p>
@@ -73,6 +74,9 @@ export default {
   },
   computed: {
     filterdList() {
+      if (!this.keyword) {
+        return this.roots
+      }
       return this.roots.filter(
         (item) => item.ras_content.indexOf(this.keyword) > -1
       );
