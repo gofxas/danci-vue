@@ -51,6 +51,7 @@
 <script>
 import Popup from "@/components/popup";
 import _ from "lodash";
+import db from "@/utils/db";
 export default {
   name: "root",
   components: { Popup },
@@ -96,14 +97,25 @@ export default {
       this.root.parts = JSON.parse(i.parts);
       this.visible = true;
     },
+    getRootsData() {
+      fetch("https://archive.v2k.fun/roots.json")
+        .then((res) => res.json())
+        .then((res) => {
+          this.keyword = this.$route.query?.k || "";
+          this.roots = res;
+          db.root.bulkPut(res);
+        });
+    },
   },
   mounted() {
-    fetch("https://archive.v2k.fun/roots.json")
-      .then((res) => res.json())
-      .then((res) => {
-        this.keyword = this.$route.query?.k||"";
-        this.roots = res;
-      });
+    db.root.toArray((arr) => {
+      if (arr && arr.length > 0) {
+        this.keyword = this.$route.query?.k || "";
+        this.roots = arr;
+      } else {
+        this.getRootsData();
+      }
+    });
   },
 };
 </script>
