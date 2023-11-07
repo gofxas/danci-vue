@@ -1,1 +1,0 @@
-import{_ as t,o,c as s}from"./index.e61707de.js";const e={class:"wrapper"};const n=t({name:"root",data:()=>({roots:[]}),mounted(){fetch("https://archive.v2k.fun/roots.json").then((t=>t.json())).then((t=>{this.roots=t}))}},[["render",function(t,n,r,a,c,d){return o(),s("div",e)}]]);export{n as default};
