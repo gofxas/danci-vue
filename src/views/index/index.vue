@@ -2,12 +2,7 @@
   <div class="wrapper">
     <Switch />
     <Word />
-    <Spell
-      v-if="spell"
-      @next="nextWord"
-      :letter="letter"
-      :word="spellWord"
-    />
+    <Spell v-if="spell" @next="nextWord" :letter="letter" :word="spellWord" />
     <template v-else>
       <div class="card btn" @click="prevWord">上一个</div>
       <div class="card btn" @click="nextWord">下一个</div>
@@ -20,8 +15,9 @@
       </span>
     </router-link>
     <div class="footer">
-      <router-link to="/report">今日学习报告</router-link>
-      <a @click="switchSpell">切换拼写模式</a>
+      <a @click="shuffleWords">乱序</a>
+      <router-link to="/report">报告</router-link>
+      <a @click="switchSpell">切换模式</a>
       <a href="https://github.com/gofxas/danci-vue" target="_blank">开源地址</a>
     </div>
   </div>
@@ -79,7 +75,7 @@ export default {
       } else {
         return this.currentWord?.word || "";
       }
-    }
+    },
   },
   methods: {
     ...mapActions("book", [
@@ -88,9 +84,15 @@ export default {
       "setActive",
       "setActiveIndex",
     ]),
-    ...mapMutations("ui",['switchSpell']),
+    ...mapMutations("ui", ["switchSpell"]),
+    ...mapMutations("book", ["shuffling"]),
+    shuffleWords() {
+      this.setActiveIndex({
+        [this.active]: 0,
+      });
+      this.shuffling()
+    },
     nextWord() {
-      console.log(this.active_index, this.active)
       if (this.words[this.active_index[this.active] + 1] != undefined) {
         this.setActiveIndex({
           [this.active]: this.active_index[this.active] + 1,

@@ -1,25 +1,28 @@
 import { persist } from "@/utils/withStorage";
 const namespace = "book";
 const module = {
-  state: () => persist(
-    {
-      active: "CET4luan_1",
-      active_index: {
-        CET4luan_1: 0,
+  state: () =>
+    persist(
+      {
+        active: "CET4luan_1",
+        active_index: {
+          CET4luan_1: 0,
+        },
+        words: [],
+        books: [],
       },
-      words: [],
-      books: [],
-    },
-    namespace
-  ),
+      namespace
+    ),
   actions: {
     async getWords({ state }) {
       const active = state.active;
       if (active) {
-        const response = await fetch("https://archive.v2k.fun/" + active + ".json");
+        const response = await fetch(
+          "https://archive.v2k.fun/" + active + ".json"
+        );
         const res = await response.json();
         state.words = res;
-      };
+      }
       return true;
     },
     async getBooks({ state }) {
@@ -35,7 +38,7 @@ const module = {
       }
       state.active = active;
       await dispatch("getWords");
-      return true; 
+      return true;
     },
     setActiveIndex({ state }, newObj) {
       const prev = state.active_index;
@@ -55,6 +58,20 @@ const module = {
     currentWord(state) {
       let i = state.active_index[state.active] || 0;
       return state.words[i];
+    },
+  },
+  mutations: {
+    shuffling(state) {
+      const _that = state.words;
+      for (
+        var j, x, i = _that.length;
+        i;
+        j = parseInt(Math.random() * i),
+          x = _that[--i],
+          _that[i] = _that[j],
+          _that[j] = x
+      );
+      // state.words =
     },
   },
 };
