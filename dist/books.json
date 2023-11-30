@@ -4,9 +4,22 @@
     "origin": "MemWord",
     "introduce": "",
     "wordNum": 1162,
+    "id": "50o",
+    "title": "50音 ",
+    "tags": [
+      "日语"
+    ]
+  },
+  {
+    "cover": "",
+    "origin": "MemWord",
+    "introduce": "",
+    "wordNum": 1162,
     "id": "nbasic",
     "title": "日语基础词汇 ",
-    "tags": ["日语"]
+    "tags": [
+      "日语"
+    ]
   },
   {
     "cover": "",
@@ -15,7 +28,9 @@
     "wordNum": 1162,
     "id": "hn1",
     "title": "日语N1高频词汇 ",
-    "tags": ["日语"]
+    "tags": [
+      "日语"
+    ]
   },
   {
     "cover": "",
@@ -24,7 +39,9 @@
     "wordNum": 1162,
     "id": "hn2",
     "title": "日语N2高频词汇 ",
-    "tags": ["日语"]
+    "tags": [
+      "日语"
+    ]
   },
   {
     "cover": "",
@@ -33,7 +50,9 @@
     "wordNum": 1162,
     "id": "hn3",
     "title": "日语N3高频词汇 ",
-    "tags": ["日语"]
+    "tags": [
+      "日语"
+    ]
   },
   {
     "cover": "",
@@ -42,7 +61,9 @@
     "wordNum": 1162,
     "id": "hn4",
     "title": "日语N4高频词汇 ",
-    "tags": ["日语"]
+    "tags": [
+      "日语"
+    ]
   },
   {
     "cover": "",
@@ -51,7 +72,9 @@
     "wordNum": 1162,
     "id": "n1",
     "title": "日语N1词汇 ",
-    "tags": ["日语"]
+    "tags": [
+      "日语"
+    ]
   },
   {
     "cover": "",
@@ -60,7 +83,9 @@
     "wordNum": 1162,
     "id": "n2",
     "title": "日语N2词汇 ",
-    "tags": ["日语"]
+    "tags": [
+      "日语"
+    ]
   },
   {
     "cover": "",
@@ -69,7 +94,9 @@
     "wordNum": 1162,
     "id": "n3",
     "title": "日语N3词汇 ",
-    "tags": ["日语"]
+    "tags": [
+      "日语"
+    ]
   },
   {
     "cover": "",
@@ -78,7 +105,9 @@
     "wordNum": 1162,
     "id": "n4",
     "title": "日语N4词汇 ",
-    "tags": ["日语"]
+    "tags": [
+      "日语"
+    ]
   },
   {
     "cover": "",
@@ -87,9 +116,10 @@
     "wordNum": 1162,
     "id": "n5",
     "title": "日语N5词汇 ",
-    "tags": ["日语"]
+    "tags": [
+      "日语"
+    ]
   },
-
   {
     "cover": "https://nos.netease.com/ydschool-online/1496632727200CET4luan_1.jpg",
     "origin": "有道考神团队",
@@ -97,7 +127,10 @@
     "wordNum": 1162,
     "id": "CET4luan_1",
     "title": "四级真题核心词 ",
-    "tags": ["四级", "有道"]
+    "tags": [
+      "四级",
+      "有道"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/1496655382926CET6luan_1.jpg",
@@ -106,7 +139,10 @@
     "wordNum": 1228,
     "id": "CET6luan_1",
     "title": "六级真题核心词 ",
-    "tags": ["六级", "有道"]
+    "tags": [
+      "六级",
+      "有道"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/1496632762670KaoYanluan_1.jpg",
@@ -115,7 +151,10 @@
     "wordNum": 1341,
     "id": "KaoYanluan_1",
     "title": "考研必考词汇",
-    "tags": ["考研", "有道"]
+    "tags": [
+      "考研",
+      "有道"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/1496632776935Level4luan_1.jpg",
@@ -124,7 +163,10 @@
     "wordNum": 595,
     "id": "Level4luan_1",
     "title": "专四真题高频词",
-    "tags": ["专四", "有道"]
+    "tags": [
+      "专四",
+      "有道"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/1491037703359Level8_1.jpg",
@@ -133,7 +175,10 @@
     "wordNum": 684,
     "id": "Level8_1",
     "title": "专八真题高频词",
-    "tags": ["专八", "有道"]
+    "tags": [
+      "专八",
+      "有道"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/youdao_CET4_2.jpg",
@@ -142,7 +187,10 @@
     "wordNum": 3739,
     "id": "CET4luan_2",
     "title": "四级英语词汇",
-    "tags": ["四级", "有道"]
+    "tags": [
+      "四级",
+      "有道"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/youdao_CET6_2.jpg",
@@ -151,7 +199,10 @@
     "wordNum": 2078,
     "id": "CET6_2",
     "title": "六级英语词汇",
-    "tags": ["六级", "有道"]
+    "tags": [
+      "六级",
+      "有道"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/youdao_KaoYan_2.jpg",
@@ -160,7 +211,10 @@
     "wordNum": 4533,
     "id": "KaoYan_2",
     "title": "考研英语词汇",
-    "tags": ["考研", "有道"]
+    "tags": [
+      "考研",
+      "有道"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/youdao_Level4_2.jpg",
@@ -169,7 +223,10 @@
     "wordNum": 4025,
     "id": "Level4luan_2",
     "title": "专四核心词汇",
-    "tags": ["专四", "有道"]
+    "tags": [
+      "专四",
+      "有道"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/youdao_Level8_2.jpg",
@@ -178,7 +235,10 @@
     "wordNum": 12197,
     "id": "Level8luan_2",
     "title": "专八核心词汇",
-    "tags": ["专八", "有道"]
+    "tags": [
+      "专八",
+      "有道"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/newOriental_CET4_3.jpg",
@@ -187,7 +247,10 @@
     "wordNum": 2607,
     "id": "CET4_3",
     "title": "新东方四级词汇",
-    "tags": ["四级", "新东方"]
+    "tags": [
+      "四级",
+      "新东方"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/newOriental_CET6_3.jpg",
@@ -196,7 +259,10 @@
     "wordNum": 2345,
     "id": "CET6_3",
     "title": "新东方六级词汇",
-    "tags": ["六级", "新东方"]
+    "tags": [
+      "六级",
+      "新东方"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/newOriental_KaoYan_3.jpg",
@@ -205,7 +271,10 @@
     "wordNum": 3728,
     "id": "KaoYan_3",
     "title": "新东方考研词汇",
-    "tags": ["考研", "新东方"]
+    "tags": [
+      "考研",
+      "新东方"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/1491037568440CET4_1.jpg",
@@ -214,7 +283,9 @@
     "wordNum": 1162,
     "id": "CET4_1",
     "title": "四级真题核心词（正序版）",
-    "tags": ["有道"]
+    "tags": [
+      "有道"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/1491037677590CET6_1.jpg",
@@ -223,7 +294,10 @@
     "wordNum": 1228,
     "id": "CET6_1",
     "title": "六级真题核心词（正序版）",
-    "tags": ["六级", "有道"]
+    "tags": [
+      "六级",
+      "有道"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/1491037662208KaoYan_1.jpg",
@@ -232,7 +306,10 @@
     "wordNum": 1341,
     "id": "KaoYan_1",
     "title": "考研必考词汇（正序版）",
-    "tags": ["考研", "有道"]
+    "tags": [
+      "考研",
+      "有道"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/1491037690141Level4_1.jpg",
@@ -241,7 +318,10 @@
     "wordNum": 595,
     "id": "Level4_1",
     "title": "专四真题高频词（正序版）",
-    "tags": ["专四", "有道"]
+    "tags": [
+      "专四",
+      "有道"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/youdao_CET4_2.jpg",
@@ -250,7 +330,10 @@
     "wordNum": 3739,
     "id": "CET4_2",
     "title": "四级英语词汇（正序版）",
-    "tags": ["四级", "有道"]
+    "tags": [
+      "四级",
+      "有道"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/youdao_Level4_2.jpg",
@@ -259,7 +342,10 @@
     "wordNum": 4025,
     "id": "Level4_2",
     "title": "专四核心词汇（正序版）",
-    "tags": ["专四", "有道"]
+    "tags": [
+      "专四",
+      "有道"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/youdao_Level8_2.jpg",
@@ -268,7 +354,10 @@
     "wordNum": 12197,
     "id": "Level8_2",
     "title": "专八核心词汇（正序版）",
-    "tags": ["专八", "有道"]
+    "tags": [
+      "专八",
+      "有道"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/youdao_IELTS_2.jpg",
@@ -277,7 +366,10 @@
     "wordNum": 3427,
     "id": "IELTSluan_2",
     "title": "雅思词汇",
-    "tags": ["IELTS", "有道"]
+    "tags": [
+      "IELTS",
+      "有道"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/youdao_TOEFL_2.jpg",
@@ -286,7 +378,10 @@
     "wordNum": 9213,
     "id": "TOEFL_2",
     "title": "TOEFL词汇",
-    "tags": ["TOEFL", "有道"]
+    "tags": [
+      "TOEFL",
+      "有道"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/youdao_GRE_2.jpg",
@@ -295,7 +390,10 @@
     "wordNum": 7199,
     "id": "GRE_2",
     "title": "GRE词汇",
-    "tags": ["GRE", "有道"]
+    "tags": [
+      "GRE",
+      "有道"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/youdao_SAT_2.jpg",
@@ -304,7 +402,10 @@
     "wordNum": 4423,
     "id": "SAT_2",
     "title": "SAT词汇",
-    "tags": ["SAT", "有道"]
+    "tags": [
+      "SAT",
+      "有道"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/youdao_GMAT_2.jpg",
@@ -313,7 +414,10 @@
     "wordNum": 3254,
     "id": "GMATluan_2",
     "title": "GMAT词汇",
-    "tags": ["GMAT", "有道"]
+    "tags": [
+      "GMAT",
+      "有道"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/newOriental_IELTS_3.jpg",
@@ -322,7 +426,10 @@
     "wordNum": 3575,
     "id": "IELTS_3",
     "title": "新东方雅思词汇",
-    "tags": ["IELTS", "新东方"]
+    "tags": [
+      "IELTS",
+      "新东方"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/newOriental_TOEFL_3.jpg",
@@ -331,7 +438,10 @@
     "wordNum": 4264,
     "id": "TOEFL_3",
     "title": "新东方TOEFL词汇",
-    "tags": ["TOEFL", "新东方"]
+    "tags": [
+      "TOEFL",
+      "新东方"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/newOriental_GRE_3.jpg",
@@ -340,7 +450,10 @@
     "wordNum": 6515,
     "id": "GRE_3",
     "title": "新东方GRE词汇",
-    "tags": ["GRE", "新东方"]
+    "tags": [
+      "GRE",
+      "新东方"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/newOriental_SAT_3.jpg",
@@ -349,7 +462,10 @@
     "wordNum": 4464,
     "id": "SAT_3",
     "title": "新东方SAT词汇",
-    "tags": ["SAT", "新东方"]
+    "tags": [
+      "SAT",
+      "新东方"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/newOriental_GMAT_3.jpg",
@@ -358,7 +474,10 @@
     "wordNum": 3047,
     "id": "GMAT_3",
     "title": "新东方GMAT词汇",
-    "tags": ["GMAT", "新东方"]
+    "tags": [
+      "GMAT",
+      "新东方"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/youdao_IELTS_2.jpg",
@@ -367,7 +486,10 @@
     "wordNum": 3427,
     "id": "IELTS_2",
     "title": "雅思词汇（正序版）",
-    "tags": ["IELTS", "有道"]
+    "tags": [
+      "IELTS",
+      "有道"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/youdao_GMAT_2.jpg",
@@ -376,7 +498,10 @@
     "wordNum": 3254,
     "id": "GMAT_2",
     "title": "GMAT词汇（正序版）",
-    "tags": ["GMAT", "有道"]
+    "tags": [
+      "GMAT",
+      "有道"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/youdao_ChuZhong_2.jpg",
@@ -385,7 +510,9 @@
     "wordNum": 1420,
     "id": "ChuZhongluan_2",
     "title": "中考必备词汇",
-    "tags": ["有道"]
+    "tags": [
+      "有道"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/youdao_GaoZhong_2.jpg",
@@ -394,7 +521,9 @@
     "wordNum": 3668,
     "id": "GaoZhongluan_2",
     "title": "高考必备词汇 ",
-    "tags": ["有道"]
+    "tags": [
+      "有道"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/newOriental_ChuZhong_3.jpg",
@@ -403,7 +532,9 @@
     "wordNum": 1803,
     "id": "ChuZhong_3",
     "title": "新东方初中词汇",
-    "tags": ["新东方"]
+    "tags": [
+      "新东方"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/newOriental_GaoZhong_3.jpg",
@@ -412,7 +543,9 @@
     "wordNum": 2340,
     "id": "GaoZhong_3",
     "title": "新东方高中词汇",
-    "tags": ["新东方"]
+    "tags": [
+      "新东方"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/2_youdao_PEPXiaoXue3_1.jpg",
@@ -421,7 +554,9 @@
     "wordNum": 64,
     "id": "PEPXiaoXue3_1",
     "title": "人教版小学英语-三年级上册",
-    "tags": ["人教版"]
+    "tags": [
+      "人教版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/2_youdao_PEPXiaoXue3_2.jpg",
@@ -430,7 +565,9 @@
     "wordNum": 72,
     "id": "PEPXiaoXue3_2",
     "title": "人教版小学英语-三年级下册",
-    "tags": ["人教版"]
+    "tags": [
+      "人教版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/2_youdao_PEPXiaoXue4_1.jpg",
@@ -439,7 +576,9 @@
     "wordNum": 84,
     "id": "PEPXiaoXue4_1",
     "title": "人教版小学英语-四年级上册",
-    "tags": ["人教版"]
+    "tags": [
+      "人教版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/2_youdao_PEPXiaoXue4_2.jpg",
@@ -448,7 +587,9 @@
     "wordNum": 104,
     "id": "PEPXiaoXue4_2",
     "title": "人教版小学英语-四年级下册",
-    "tags": ["人教版"]
+    "tags": [
+      "人教版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/2_youdao_PEPXiaoXue5_1.jpg",
@@ -457,7 +598,9 @@
     "wordNum": 131,
     "id": "PEPXiaoXue5_1",
     "title": "人教版小学英语-五年级上册",
-    "tags": ["人教版"]
+    "tags": [
+      "人教版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/2_youdao_PEPXiaoXue5_2.jpg",
@@ -466,7 +609,9 @@
     "wordNum": 156,
     "id": "PEPXiaoXue5_2",
     "title": "人教版小学英语-五年级下册",
-    "tags": ["人教版"]
+    "tags": [
+      "人教版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/2_youdao_PEPXiaoXue6_1.jpg",
@@ -475,7 +620,9 @@
     "wordNum": 130,
     "id": "PEPXiaoXue6_1",
     "title": "人教版小学英语-六年级上册",
-    "tags": ["人教版"]
+    "tags": [
+      "人教版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/2_youdao_PEPXiaoXue6_2.jpg",
@@ -484,7 +631,9 @@
     "wordNum": 108,
     "id": "PEPXiaoXue6_2",
     "title": "人教版小学英语-六年级下册",
-    "tags": ["人教版"]
+    "tags": [
+      "人教版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/3_youdao_PEPChuZhong7_1.jpg",
@@ -493,7 +642,9 @@
     "wordNum": 392,
     "id": "PEPChuZhong7_1",
     "title": "人教版初中英语-七年级上册",
-    "tags": ["人教版"]
+    "tags": [
+      "人教版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/3_youdao_PEPChuZhong7_2.jpg",
@@ -502,7 +653,9 @@
     "wordNum": 492,
     "id": "PEPChuZhong7_2",
     "title": "人教版初中英语-七年级下册",
-    "tags": ["人教版"]
+    "tags": [
+      "人教版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/3_youdao_PEPChuZhong8_1.jpg",
@@ -511,7 +664,9 @@
     "wordNum": 419,
     "id": "PEPChuZhong8_1",
     "title": "人教版初中英语-八年级上册",
-    "tags": ["人教版"]
+    "tags": [
+      "人教版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/3_youdao_PEPChuZhong8_2.jpg",
@@ -520,7 +675,9 @@
     "wordNum": 466,
     "id": "PEPChuZhong8_2",
     "title": "人教版初中英语-八年级下册",
-    "tags": ["人教版"]
+    "tags": [
+      "人教版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/3_youdao_PEPChuZhong9_1.jpg",
@@ -529,7 +686,9 @@
     "wordNum": 551,
     "id": "PEPChuZhong9_1",
     "title": "人教版初中英语-九年级全册",
-    "tags": ["人教版"]
+    "tags": [
+      "人教版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/reciteWord_1545032535025_WaiYanSheChuZhong_1.png",
@@ -538,7 +697,9 @@
     "wordNum": 629,
     "id": "WaiYanSheChuZhong_1",
     "title": "外研社版初中英语-七年级上册",
-    "tags": ["外研社版"]
+    "tags": [
+      "外研社版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/reciteWord_1545032535434_WaiYanSheChuZhong_2.png",
@@ -547,7 +708,9 @@
     "wordNum": 438,
     "id": "WaiYanSheChuZhong_2",
     "title": "外研社版初中英语-七年级下册",
-    "tags": ["外研社版"]
+    "tags": [
+      "外研社版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/reciteWord_1545032535509_WaiYanSheChuZhong_3.png",
@@ -556,7 +719,9 @@
     "wordNum": 320,
     "id": "WaiYanSheChuZhong_3",
     "title": "外研社版初中英语-八年级上册",
-    "tags": ["外研社版"]
+    "tags": [
+      "外研社版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/reciteWord_1545032534561_WaiYanSheChuZhong_4.png",
@@ -565,7 +730,9 @@
     "wordNum": 266,
     "id": "WaiYanSheChuZhong_4",
     "title": "外研社版初中英语-八年级下册",
-    "tags": ["外研社版"]
+    "tags": [
+      "外研社版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/reciteWord_1545032534804_WaiYanSheChuZhong_5.png",
@@ -574,7 +741,9 @@
     "wordNum": 381,
     "id": "WaiYanSheChuZhong_5",
     "title": "外研社版初中英语-九年级上册",
-    "tags": ["外研社版"]
+    "tags": [
+      "外研社版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/reciteWord_1545032534322_WaiYanSheChuZhong_6.png",
@@ -583,7 +752,9 @@
     "wordNum": 128,
     "id": "WaiYanSheChuZhong_6",
     "title": "外研社版初中英语-九年级下册",
-    "tags": ["外研社版"]
+    "tags": [
+      "外研社版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/3_youdao_PEPGaoZhong_1.jpg",
@@ -592,7 +763,9 @@
     "wordNum": 311,
     "id": "PEPGaoZhong_1",
     "title": "人教版高中英语-必修1",
-    "tags": ["人教版"]
+    "tags": [
+      "人教版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/3_youdao_PEPGaoZhong_2.jpg",
@@ -601,7 +774,9 @@
     "wordNum": 319,
     "id": "PEPGaoZhong_2",
     "title": "人教版高中英语-必修2",
-    "tags": ["人教版"]
+    "tags": [
+      "人教版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/3_youdao_PEPGaoZhong_3.jpg",
@@ -610,7 +785,9 @@
     "wordNum": 366,
     "id": "PEPGaoZhong_3",
     "title": "人教版高中英语-必修3",
-    "tags": ["人教版"]
+    "tags": [
+      "人教版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/3_youdao_PEPGaoZhong_4.jpg",
@@ -619,7 +796,9 @@
     "wordNum": 307,
     "id": "PEPGaoZhong_4",
     "title": "人教版高中英语-必修4",
-    "tags": ["人教版"]
+    "tags": [
+      "人教版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/3_youdao_PEPGaoZhong_5.jpg",
@@ -628,7 +807,9 @@
     "wordNum": 357,
     "id": "PEPGaoZhong_5",
     "title": "人教版高中英语-必修5",
-    "tags": ["人教版"]
+    "tags": [
+      "人教版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/3_youdao_PEPGaoZhong_6.jpg",
@@ -637,7 +818,9 @@
     "wordNum": 391,
     "id": "PEPGaoZhong_6",
     "title": "人教版高中英语-选修6",
-    "tags": ["人教版"]
+    "tags": [
+      "人教版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/3_youdao_PEPGaoZhong_7.jpg",
@@ -646,7 +829,9 @@
     "wordNum": 384,
     "id": "PEPGaoZhong_7",
     "title": "人教版高中英语-选修7",
-    "tags": ["人教版"]
+    "tags": [
+      "人教版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/3_youdao_PEPGaoZhong_8.jpg",
@@ -655,7 +840,9 @@
     "wordNum": 420,
     "id": "PEPGaoZhong_8",
     "title": "人教版高中英语-选修8",
-    "tags": ["人教版"]
+    "tags": [
+      "人教版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/3_youdao_PEPGaoZhong_9.jpg",
@@ -664,7 +851,9 @@
     "wordNum": 352,
     "id": "PEPGaoZhong_9",
     "title": "人教版高中英语-选修9",
-    "tags": ["人教版"]
+    "tags": [
+      "人教版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/3_youdao_PEPGaoZhong_10.jpg",
@@ -673,7 +862,9 @@
     "wordNum": 361,
     "id": "PEPGaoZhong_10",
     "title": "人教版高中英语-选修10",
-    "tags": ["人教版"]
+    "tags": [
+      "人教版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/3_youdao_PEPGaoZhong_11.jpg",
@@ -682,7 +873,9 @@
     "wordNum": 309,
     "id": "PEPGaoZhong_11",
     "title": "人教版高中英语-选修11",
-    "tags": ["人教版"]
+    "tags": [
+      "人教版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/youdao_ChuZhong_2.jpg",
@@ -691,7 +884,9 @@
     "wordNum": 1420,
     "id": "ChuZhong_2",
     "title": "初中英语词汇（正序版）",
-    "tags": ["有道"]
+    "tags": [
+      "有道"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/youdao_GaoZhong_2.jpg",
@@ -700,7 +895,9 @@
     "wordNum": 3668,
     "id": "GaoZhong_2",
     "title": "高中英语词汇（正序版）",
-    "tags": ["人教版"]
+    "tags": [
+      "人教版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/youdao_BEC_2.jpg",
@@ -709,7 +906,9 @@
     "wordNum": 2753,
     "id": "BEC_2",
     "title": "商务英语词汇",
-    "tags": ["BEC"]
+    "tags": [
+      "BEC"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/newOriental_BEC_3.jpg",
@@ -718,7 +917,10 @@
     "wordNum": 2825,
     "id": "BEC_3",
     "title": "新东方BEC词汇",
-    "tags": ["新东方", "BEC"]
+    "tags": [
+      "新东方",
+      "BEC"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/reciteWord_BeiShiGaoZhong_1.jpg",
@@ -727,7 +929,9 @@
     "wordNum": 226,
     "id": "BeiShiGaoZhong_1",
     "title": "北师大版高中必修一",
-    "tags": ["北师版"]
+    "tags": [
+      "北师版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/reciteWord_BeiShiGaoZhong_2.jpg",
@@ -736,7 +940,9 @@
     "wordNum": 244,
     "id": "BeiShiGaoZhong_2",
     "title": "北师大版高中必修二",
-    "tags": ["北师版"]
+    "tags": [
+      "北师版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/reciteWord_BeiShiGaoZhong_3.jpg",
@@ -745,7 +951,9 @@
     "wordNum": 295,
     "id": "BeiShiGaoZhong_3",
     "title": "北师大版高中必修三",
-    "tags": ["北师版"]
+    "tags": [
+      "北师版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/reciteWord_BeiShiGaoZhong_4.jpg",
@@ -754,7 +962,9 @@
     "wordNum": 336,
     "id": "BeiShiGaoZhong_4",
     "title": "北师大版高中必修四",
-    "tags": ["北师版"]
+    "tags": [
+      "北师版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/reciteWord_BeiShiGaoZhong_5.jpg",
@@ -763,7 +973,9 @@
     "wordNum": 327,
     "id": "BeiShiGaoZhong_5",
     "title": "北师大版高中必修五",
-    "tags": ["北师版"]
+    "tags": [
+      "北师版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/reciteWord_BeiShiGaoZhong_6.jpg",
@@ -772,7 +984,9 @@
     "wordNum": 271,
     "id": "BeiShiGaoZhong_6",
     "title": "北师大版高中选修六",
-    "tags": ["北师版"]
+    "tags": [
+      "北师版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/reciteWord_BeiShiGaoZhong_7.jpg",
@@ -781,7 +995,9 @@
     "wordNum": 334,
     "id": "BeiShiGaoZhong_7",
     "title": "北师大版高中选修七",
-    "tags": ["北师版"]
+    "tags": [
+      "北师版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/reciteWord_BeiShiGaoZhong_8.jpg",
@@ -790,7 +1006,9 @@
     "wordNum": 364,
     "id": "BeiShiGaoZhong_8",
     "title": "北师大版高中选修八",
-    "tags": ["北师版"]
+    "tags": [
+      "北师版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/reciteWord_BeiShiGaoZhong_9.jpg",
@@ -799,7 +1017,9 @@
     "wordNum": 299,
     "id": "BeiShiGaoZhong_9",
     "title": "北师大版高中选修九",
-    "tags": ["北师版"]
+    "tags": [
+      "北师版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/reciteWord_BeiShiGaoZhong_10.jpg",
@@ -808,7 +1028,9 @@
     "wordNum": 267,
     "id": "BeiShiGaoZhong_10",
     "title": "北师大版高中选修十",
-    "tags": ["北师版"]
+    "tags": [
+      "北师版"
+    ]
   },
   {
     "cover": "https://nos.netease.com/ydschool-online/reciteWord_BeiShiGaoZhong_11.jpg",
@@ -817,6 +1039,8 @@
     "wordNum": 330,
     "id": "BeiShiGaoZhong_11",
     "title": "北师大版高中选修十一",
-    "tags": ["北师版"]
+    "tags": [
+      "北师版"
+    ]
   }
 ]
