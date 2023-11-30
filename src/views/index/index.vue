@@ -15,11 +15,19 @@
       </span>
     </router-link>
     <div class="footer">
-      <a @click="shuffleWords">乱序</a>
+      <!-- <a @click="shuffleWords">乱序</a> -->
       <router-link to="/report">报告</router-link>
       <a @click="switchSpell">切换模式</a>
       <a href="https://github.com/gofxas/danci-vue" target="_blank">开源地址</a>
     </div>
+    <Popup @close="closePoper" :visible="poper">
+      <div>
+        <p>本次更新！</p>
+        <p>乱序模式：</p>
+        <p>打乱单词本顺序，但是从0开始。</p>
+        <p>新增日语50音图</p>
+      </div>
+    </Popup>
   </div>
 </template>
 
@@ -27,6 +35,7 @@
 import Switch from "./components/switch.vue";
 import Word from "./components/word.vue";
 import Spell from "./components/spell.vue";
+import Popup from "@/components/popup";
 import db from "@/utils/db";
 import updateRecord from "@/utils/record";
 import { formatKana } from "@/utils/format";
@@ -34,10 +43,11 @@ import { mapActions, mapState, mapGetters, mapMutations } from "vuex";
 import _ from "lodash";
 export default {
   name: "index",
-  components: { Switch, Word, Spell },
+  components: { Switch, Word, Spell, Popup },
   data() {
     return {
       count: 0,
+      poper: false,
     };
   },
   watch: {
@@ -86,11 +96,15 @@ export default {
     ]),
     ...mapMutations("ui", ["switchSpell"]),
     ...mapMutations("book", ["shuffling"]),
+    closePoper() {
+      localStorage.setItem("hidPoper", true);
+      this.poper = false;
+    },
     shuffleWords() {
       this.setActiveIndex({
         [this.active]: 0,
       });
-      this.shuffling()
+      this.shuffling();
     },
     nextWord() {
       if (this.words[this.active_index[this.active] + 1] != undefined) {
