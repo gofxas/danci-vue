@@ -102,7 +102,7 @@ export default {
       this.visible = true;
     },
     getRootsData() {
-      fetch("https://archive.v2k.fun/roots.json")
+      fetch("https://archive.cpdd.cool/roots.json")
         .then((res) => res.json())
         .then((res) => {
           this.keyword = this.$route.query?.k || "";

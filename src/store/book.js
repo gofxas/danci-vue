@@ -18,7 +18,7 @@ const module = {
       const active = state.active;
       if (active) {
         const response = await fetch(
-          "https://archive.v2k.fun/" + active + ".json"
+          "https://archive.cpdd.cool/" + active + ".json"
         );
         const res = await response.json();
         state.words = res;
